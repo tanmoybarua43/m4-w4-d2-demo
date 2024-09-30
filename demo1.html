@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Demo 1</title>
+
+  <style>
+    * { border: 2px solid #dedede; padding: 15px; margin: 15px; }
+    html { margin: 0; padding: 0; }
+    body { max-width: 600px; font-family: sans-serif; color: #333; }
+  </style>
+</head>
+
+<body>
+  <h1>Shark World</h1>
+  <p>The world's leading source on <strong>shark</strong> related information.</p>
+  <h2>Types of Sharks</h2>
+  <ul>
+    <li>Hammerhead</li>
+    <li>Tiger</li>
+    <li>Great White</li>
+  </ul>
+
+  <script>
+    const h1 = document.getElementsByTagName('h1')[0];
+    const p = document.getElementsByTagName('p')[0];
+    const ul = document.getElementsByTagName('ul')[0];
+    // Get parent node of p element
+    p.parentNode;
+
+    // Get grandparent node of p element
+    p.parentNode.parentNode;
+
+    // Get all child nodes of ul element
+    ul.childNodes;
+
+    // Change background of first child of ul
+    ul.firstElementChild.style.background = 'yellow';
+
+    // Set all children of ul to yellow background
+    for (let element of ul.children) { 
+        element.style.background = 'yellow';
+    }
+
+    // Print all child nodes of p
+    for (let element of p.childNodes) {
+        console.log(element);
+    }
+
+    // Change background of a specific element
+    document.body.children[3].lastElementChild.style.background = 'purple';
+
+    
+  </script>
+</body>
+
+</html>
